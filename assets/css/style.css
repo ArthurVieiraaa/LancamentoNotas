@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Mulish", sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: #f8f8f8;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: #f78b1f;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.623);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar img {
+  width: 200px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar a{
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
+.navbar-btn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 0.5rem;
+}
+
+.menu li a {
+  margin: 0 1rem;
+  color: #005594;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.menu li a:hover {
+  color: #f78b1f;
+  font-size: 19px;
+  transition: all 0.3s;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.container-footer p {
+  margin: 0;
+}
+
+.container-footer p span {
+  color: #f78b1f;
+}
+
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 65vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-top: 36px;
+  background-color: #f8f8f8;
+  z-index: 5;
+}
+
+.formulario h1 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #f78b1f;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.formulario form label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.formulario form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.formulario form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.formulario form button {
+  width: 30%;
+  height: 50px;
+  margin-left: 35%;
+  background-color: #fff;
+  color: #005594;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+}
+
+.formulario form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  background-color: #f78b1f;
+  color: #fff;
+}
+
+.reset-senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.reset-senha a{
+    color: #005594;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.reset-senha a:hover{
+    color: #f78b1f;
+    transition: all 0.5s;
+    transform: scale(1.02);
+}
+
+.cursos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos-disponiveis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.cursos-disponiveis h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #f78b1f;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.cursos-lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cursos-lista ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.cursos-lista ul li{
+    list-style: none;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+
+.cursos-lista ul li h1{
+    width: 60%;
+    height: 10%;
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cursos-lista ul li h2{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #005594;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cursos-lista ul li p{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cursos-lista ul li h3{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f78b1f;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cursos-lista ul li button{
+    width: 10%;
+    height: 40px;
+    background-color: #fff;
+    color: #005594;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+}
+
+.cursos-lista ul li button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    background-color: #f78b1f;
+    color: #fff;
+}
+
+.cursos-inscricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.cursos-inscricao h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #f78b1f;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.formulario-curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 70vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-top: 36px;
+  background-color: #f8f8f8;
+  z-index: 5;
+}
+
+.formulario-curso h1 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #f78b1f;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.formulario-curso form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.formulario-curso form label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.formulario-curso form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.formulario-curso form select {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.formulario-curso form button {
+  width: 40%;
+  height: 50px;
+  margin-left: 30%;
+  background-color: #fff;
+  color: #005594;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+}
+
+.formulario-curso form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  background-color: #f78b1f;
+  color: #fff;
+}
+
+.contato{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contato-content h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #f78b1f;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.forum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.forum div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.forum .forum-carlos{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.forum .forum-doe img{
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.forum .forum-carlos img{
+    width: 200px;
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.forum-doe .info-pessoa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 80%;
+    height: 100%;
+    box-shadow: none;
+}
+
+.forum-doe .info-pessoa h1{
+    color: #f78b1f;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.forum-carlos .info-pessoa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    width: 80%;
+    height: 100%;
+    box-shadow: none;
+}
+
+.forum-carlos .info-pessoa h1{
+    color: #f78b1f;
+    font-size: 24px;
+    font-weight: 600;
+}
