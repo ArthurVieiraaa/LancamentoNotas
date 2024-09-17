@@ -159,7 +159,7 @@ h1 {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .container-footer p {
@@ -184,12 +184,13 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  height: 65vh;
+  width: 25%;
+  height: 55vh;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  margin-top: 36px;
+  margin-top: 5%;
+  margin-bottom: 2%;
   background-color: #f8f8f8;
   z-index: 5;
 }
@@ -200,7 +201,7 @@ h1 {
   margin-bottom: 40px;
   color: #f78b1f;
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -537,101 +538,410 @@ h1 {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.contato-content h1{
-    margin-top: 20px;
+.contato h1{
+    margin-top: 40px;
     text-align: center;
     color: #f78b1f;
     font-size: 28px;
     font-weight: 800;
 }
 
+.contato-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
 .forum{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
     margin-top: 20px;
 }
 
-.forum div{
+.forum .forum-doe{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 50%;
     height: 100%;
-    margin-top: 20px;
+    gap: 3%;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    margin-left: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.forum .forum-doe div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.forum .forum-doe div img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.forum .forum-doe .info-pessoa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 67%;
+    height: 100%;
+    gap: 10px;
+}
+
+.forum .forum-doe .info-pessoa h1{
+    margin-right: 80%;
+    color: #f78b1f;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.forum .forum-doe .info-pessoa p{
+    margin-right: 5%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5%;
 }
 
 .forum .forum-carlos{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-    height: 100%;
-    margin-top: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 3%;
+  border-radius: 15px;
+  margin-left: 45%;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.forum .forum-doe img{
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    -o-object-fit: cover;
-       object-fit: cover;
+.forum .forum-carlos div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
 }
 
-.forum .forum-carlos img{
-    width: 200px;
-    height: 200px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    -o-object-fit: cover;
-       object-fit: cover;
+.forum .forum-carlos div img{
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-.forum-doe .info-pessoa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    width: 80%;
-    height: 100%;
-    box-shadow: none;
+.forum .forum-carlos .info-pessoa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 67%;
+  height: 100%;
+  gap: 10px;
 }
 
-.forum-doe .info-pessoa h1{
-    color: #f78b1f;
-    font-size: 24px;
-    font-weight: 600;
+.forum .forum-carlos .info-pessoa h1{
+  margin-left: 87%;
+  color: #f78b1f;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.forum-carlos .info-pessoa{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: end;
-    width: 80%;
-    height: 100%;
-    box-shadow: none;
+.forum .forum-carlos .info-pessoa p{
+  margin-left: 5%;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: end;
+  margin-bottom: 5%;
 }
 
-.forum-carlos .info-pessoa h1{
-    color: #f78b1f;
-    font-size: 24px;
-    font-weight: 600;
+.contato-content .contato-text{
+  margin-top: 30px;
+  border-top: 1px solid #c8c8c8;
+}
+
+.formulario-contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 60vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+  background-color: #f8f8f8;
+  z-index: 5;
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.formulario-contato form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f78b1f;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.formulario-contato form label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.formulario-contato form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.formulario-contato form textarea {
+  width: 100%;
+  height: 50px;
+  padding: 15px 10px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.formulario-contato form button {
+  width: 40%;
+  height: 50px;
+  margin-left: 30%;
+  background-color: #fff;
+  color: #005594;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+}
+
+.formulario-contato form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  background-color: #f78b1f;
+  color: #fff;
+}
+
+#close-modal{
+  padding: .6rem 1.2rem;
+  background-color: #888;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  opacity: .9;
+  font: 1rem;
+  transition: 0.4s;
+}
+
+#close-modal {
+  background-color: #ff0000;
+}
+
+#close-modal:hover{
+  opacity: 1;
+}
+
+#fade, #modal{
+  transition: .5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#fade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+#modal{
+  position: fixed;
+  left: 45%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  z-index: 10;
+  background: #fff;
+  width: 60%;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-header h2{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#modal.hide, #fade.hide{
+  opacity: 0;
+  pointer-events: none;
+} 
+
+#modal.hide{
+  top: 0;
+}
+
+.modal-body{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.modal-body p{
+  margin-bottom: 1rem;
+}
+
+.modal-body-container{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.modal-body-content img{
+  width: 450px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-body-content .texto-modal{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.modal-body-content .texto-modal div{
+  margin: 10px 0;
+}
+
+.main-modal-botao{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-body-content .modal-botao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.modal-body-content .modal-botao div button{
+  padding: .6rem 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  opacity: .9;
+  font: 1rem;
+  transition: 0.4s;
+  width: 170px;
+  background-color: #B5C5BA;
+}
+
+.modal-body-content .modal-botao div button:hover{
+  transition: 0.6s;
+  background-color: #828f86;
+}
+
+.finalizar-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.finalizar-modal button{
+  padding: .6rem 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  opacity: .9;
+  font: 1rem;
+  transition: 0.4s;
+  width: 170px;
+  background-color: #00ff51b9;
+}
+
+.finalizar-modal button:hover{
+  transition: 0.6s;
+  background-color: #00ff51;
 }
