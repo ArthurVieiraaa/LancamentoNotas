@@ -179,6 +179,15 @@ h1 {
     align-items: center;
 }
 
+.senha{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -195,7 +204,23 @@ h1 {
   z-index: 5;
 }
 
-.formulario h1 {
+.formulario-senha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 65vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: #f8f8f8;
+  margin-top: 2%;
+  z-index: 5;
+}
+
+.formulario h1,
+.formulario-senha h1 {
   margin-top: 10px;
   text-align: center;
   margin-bottom: 40px;
@@ -205,7 +230,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.formulario form {
+.formulario form,
+.formulario-senha form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,14 +240,16 @@ h1 {
   padding: 20px;
 }
 
-.formulario form label {
+.formulario form label,
+.formulario-senha form label {
   color: #000;
   font-size: 16px;
   font-weight: 500;
   text-align: start;
 }
 
-.formulario form input {
+.formulario form input,
+.formulario-senha form input {
   width: 100%;
   height: 50px;
   padding: 0 10px;
@@ -252,7 +280,8 @@ h1 {
   padding: 10px;
 }
 
-.formulario form button {
+.formulario form button,
+.formulario-senha form button {
   width: 30%;
   height: 50px;
   margin-left: 35%;
@@ -268,7 +297,8 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
 }
 
-.formulario form button:hover {
+.formulario form button:hover,
+.formulario-senha form button:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   background-color: #f78b1f;
@@ -283,7 +313,16 @@ h1 {
     margin-top: 30px;
 }
 
-.reset-senha a{
+.senha-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.reset-senha a,
+.senha-btn a{
     color: #005594;
     font-size: 16px;
     font-weight: 700;
@@ -291,7 +330,8 @@ h1 {
     transition: all 0.5s;
 }
 
-.reset-senha a:hover{
+.reset-senha a:hover,
+.senha-btn a:hover{
     color: #f78b1f;
     transition: all 0.5s;
     transform: scale(1.02);
@@ -447,7 +487,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 25%;
-  height: 70vh;
+  height: 50vh;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -559,7 +599,7 @@ h1 {
     margin-top: 20px;
 }
 
-.forum{
+.avaliacao{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -567,7 +607,7 @@ h1 {
     margin-top: 20px;
 }
 
-.forum .forum-doe{
+.avaliacao .avaliacao-doe{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -581,7 +621,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.forum .forum-doe div{
+.avaliacao .avaliacao-doe div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -590,14 +630,14 @@ h1 {
     height: 100%;
 }
 
-.forum .forum-doe div img{
+.avaliacao .avaliacao-doe div img{
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.forum .forum-doe .info-pessoa{
+.avaliacao .avaliacao-doe .info-pessoa{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -607,14 +647,14 @@ h1 {
     gap: 10px;
 }
 
-.forum .forum-doe .info-pessoa h1{
+.avaliacao .avaliacao-doe .info-pessoa h1{
     margin-right: 80%;
     color: #f78b1f;
     font-size: 28px;
     font-weight: 700;
 }
 
-.forum .forum-doe .info-pessoa p{
+.avaliacao .avaliacao-doe .info-pessoa p{
     margin-right: 5%;
     color: #000;
     font-size: 16px;
@@ -622,7 +662,7 @@ h1 {
     margin-bottom: 5%;
 }
 
-.forum .forum-carlos{
+.avaliacao .avaliacao-carlos{
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -636,7 +676,7 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.forum .forum-carlos div{
+.avaliacao .avaliacao-carlos div{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -645,14 +685,14 @@ h1 {
   height: 100%;
 }
 
-.forum .forum-carlos div img{
+.avaliacao .avaliacao-carlos div img{
   width: 100%;
   object-fit: cover;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-.forum .forum-carlos .info-pessoa{
+.avaliacao .avaliacao-carlos .info-pessoa{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -661,14 +701,14 @@ h1 {
   gap: 10px;
 }
 
-.forum .forum-carlos .info-pessoa h1{
+.avaliacao .avaliacao-carlos .info-pessoa h1{
   margin-left: 87%;
   color: #f78b1f;
   font-size: 28px;
   font-weight: 700;
 }
 
-.forum .forum-carlos .info-pessoa p{
+.avaliacao .avaliacao-carlos .info-pessoa p{
   margin-left: 5%;
   color: #000;
   font-size: 16px;
@@ -944,4 +984,151 @@ h1 {
 .finalizar-modal button:hover{
   transition: 0.6s;
   background-color: #00ff51;
+}
+
+.painel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.painel h1{
+  margin-top: 30px;
+  text-align: center;
+  color: #f78b1f;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.painel h2{
+  margin-top: 15px;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.painel p{
+  margin-top: 10px;
+  text-align: center;
+  color: #7c7c7c;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.sobre-senac{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin-top: 40px;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-senac div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.sobre-senac img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.sobre-senac .info-senac{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.sobre-senac .info-senac h1{
+  margin-top: 20px;
+  color: #727272;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sobre-senac .info-senac p{
+  margin-top: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: start;
+  margin-right: 5%;
+}
+
+.forum{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.forum h1{
+  margin-top: 40px;
+  text-align: center;
+  color: #f78b1f;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.forum-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.forum-content div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  gap: 20px;
+  border-radius: 15px;
+  margin-top: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.forum-content div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 2px solid #c8c8c8;
+}
+
+.forum-content div h3{
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: 80%;
 }

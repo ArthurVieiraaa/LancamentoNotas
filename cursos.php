@@ -1,6 +1,6 @@
 <?php
     $title = "Cursos";
-    include "includes/header.php";
+    include "includes/headerPainelAluno.php";
 ?>
 
 <?php

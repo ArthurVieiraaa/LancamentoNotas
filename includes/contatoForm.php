@@ -1,8 +1,8 @@
 <div class="contato">
-    <h1>Fórum:</h1>
+    <h1>Avaliações:</h1>
     <div class="contato-content">
-        <div class="forum">
-            <div class="forum-doe">
+        <div class="avaliacao">
+            <div class="avaliacao-doe">
                 <div>
                     <img src="assets/img/JohnDoe.jpg" alt="">
                 </div>
@@ -11,7 +11,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus commodi magni iste esse maiores ex, molestias placeat minus dolor minima cumque, facere officiis fuga reiciendis illo earum quisquam sequi repudiandae.</p>
                 </div>
             </div>
-            <div class="forum-carlos">
+            <div class="avaliacao-carlos">
                 <div>
                     <img src="assets/img/Carlos.jpg" alt="">
                 </div>
@@ -20,7 +20,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus commodi magni iste esse maiores ex, molestias placeat minus dolor minima cumque, facere officiis fuga reiciendis illo earum quisquam sequi repudiandae.</p>
                 </div>
             </div>
-            <div class="forum-doe">
+            <div class="avaliacao-doe">
                 <div>
                     <img src="assets/img/JaneDoe.jpg" alt="">
                 </div>

@@ -1,10 +1,10 @@
 <?php
-    $title = "Fórum";
+    $title = "Painel Aluno";
     include "includes/headerPainelAluno.php";
 ?>
 
 <?php
-    include "includes/forum.php";
+    include "includes/painelAluno.php";
 ?>
 
 <?php
