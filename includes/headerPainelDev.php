@@ -13,7 +13,7 @@
                 <a href="painelDesenvolvedor.php"><img src="assets/img/Senac.png" alt=""></a>
             </div>
             <div class="sair">
-                <button><i class="fa-solid fa-right-from-bracket"> Sair</i></button>
+                <button ><i class="fa-solid fa-right-from-bracket"> Sair</i></button>
             </div>
         </div>
         <div class="navbar-btn">

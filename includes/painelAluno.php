@@ -1,5 +1,11 @@
+<?php
+    if (!isset($_SESSION['usuario'])) {
+        session_start();;
+    }
+?>
+
 <div class="painel">
-    <h1>Olá, Fulano!</h1>
+    <h1>Olá, <?php echo $_SESSION['usuario'] ?? 'Fulano' ?>!</h1>
     <h2>Seja bem-vindo ao seu painel de aluno.</h2>
     <p>Escolha uma das opções no menu acima para começar.</p>
     <div class="sobre-senac">
