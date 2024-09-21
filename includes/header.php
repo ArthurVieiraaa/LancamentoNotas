@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar-index">
             <a href="index.php"><img src="assets/img/Senac.png" alt=""></a>
         </div>
         <div class="navbar-btn">
