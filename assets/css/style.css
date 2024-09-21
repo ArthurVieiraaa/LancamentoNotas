@@ -126,7 +126,7 @@ h1 {
   width: 200px;
   height: 100px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-left: 45%;
 }
 
