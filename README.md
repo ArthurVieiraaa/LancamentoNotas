@@ -1,8 +1,6 @@
 # Desenvolvido Por: Arthur Vieira Bruske
 
-Curso: ADS 2024
-Data inicio: 17/09/2024
-Data termino: 21/09/2024
+Curso: ADS 2024 | Data Inicio: 17/09/2024 | Data Termino: 21/09/2024
 
 ___________________________________
 ### ⚙ - Tools
