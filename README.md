@@ -1,4 +1,4 @@
-# Desenvolvido Por: Arthur Vieira Bruske
+# Desenvolvido Por: Arthur Vieira Bruske & Felipe H. Vieira
 
 Curso: ADS 2024 | Data Inicio: 17/09/2024 | Data Termino: 21/09/2024
 
