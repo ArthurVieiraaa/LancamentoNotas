@@ -1,7 +1,13 @@
+<?php
+    if (!isset($_SESSION['usuario'])) {
+        session_start();;
+    }
+?>
+
 <div class="boletim">
     <h1>Boletim:</h1>
     <div class="boletim-content">
-        <h2>Aluno: Fulano</h2>
+        <h2>Aluno: <?php echo $_SESSION['usuario'] ?? 'Fulano' ?></h2>
         <div class="boletim-content-notas">
             <div>
                 <h3>Programação</h3>

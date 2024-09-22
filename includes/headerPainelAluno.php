@@ -13,7 +13,9 @@
                 <a href="painelAln.php"><img src="assets/img/Senac.png" alt=""></a>
             </div>
             <div class="sair">
-                <button><i class="fa-solid fa-right-from-bracket"> Sair</i></button>
+                <form action="index.php" method="POST">
+                    <button type="submit"><i class="fa-solid fa-right-from-bracket"></i><p> Sair</p></button>
+                </form>
             </div>
         </div>
         <div class="navbar-btn">

@@ -22,12 +22,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `avaliacao` (
-  `idAvaliacao` int(11) NOT NULL,
+  `idAvaliacao` int(11) NOT NULL AUTO_INCREMENT,
   `materia` varchar(255) NOT NULL,
   `data` date NOT NULL,
   `assunto` varchar(255) NOT NULL,
   `nota` decimal(10,0) NOT NULL,
-  `prova` varchar(255) NOT NULL
+  `prova` varchar(255) NOT NULL,
+  PRIMARY KEY (`idAvaliacao`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -37,11 +38,12 @@ CREATE TABLE `avaliacao` (
 --
 
 CREATE TABLE `boletim` (
-  `idBoletim` int(11) NOT NULL,
+  `idBoletim` int(11) NOT NULL AUTO_INCREMENT,
   `materia` varchar(255) NOT NULL,
   `media` decimal(10,0) NOT NULL,
   `feedbackAlunos` varchar(255) NOT NULL,
-  `curso` varchar(255) NOT NULL
+  `curso` varchar(255) NOT NULL,
+  PRIMARY KEY (`idBoletim`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -51,11 +53,12 @@ CREATE TABLE `boletim` (
 --
 
 CREATE TABLE `curso` (
-  `idCurso` int(11) NOT NULL,
+  `idCurso` int(11) NOT NULL AUTO_INCREMENT,
   `nomeCurso` varchar(255) NOT NULL,
   `categoria` varchar(255) NOT NULL,
   `valor` decimal(10,0) NOT NULL,
-  `dtInicio` date NOT NULL
+  `dtInicio` date NOT NULL,
+  PRIMARY KEY (`idCurso`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -65,77 +68,46 @@ CREATE TABLE `curso` (
 --
 
 CREATE TABLE `forum` (
-  `idForum` int(11) NOT NULL,
+  `idForum` int(11) NOT NULL AUTO_INCREMENT,
   `imagem` blob NOT NULL,
-  `mensagem` varchar(255) NOT NULL
+  `mensagem` varchar(255) NOT NULL,
+  PRIMARY KEY (`idForum`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuario`
+-- Estrutura da tabela `usuarios`
 --
 
-CREATE TABLE `usuario` (
-  `idUsuario` int(11) NOT NULL,
-  `usuario` varchar(80) NOT NULL,
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
   `senha` varchar(255) NOT NULL,
-  `tipo` varchar(255) NOT NULL
+  `permissao` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Índices para tabelas despejadas
---
-
---
--- Índices para tabela `avaliacao`
---
-ALTER TABLE `avaliacao`
-  ADD PRIMARY KEY (`idAvaliacao`);
-
---
--- Índices para tabela `boletim`
---
-ALTER TABLE `boletim`
-  ADD PRIMARY KEY (`idBoletim`);
-
---
--- Índices para tabela `forum`
---
-ALTER TABLE `forum`
-  ADD PRIMARY KEY (`idForum`);
-
---
--- Índices para tabela `usuario`
---
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`idUsuario`);
+-- --------------------------------------------------------
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
---
 -- AUTO_INCREMENT de tabela `avaliacao`
---
 ALTER TABLE `avaliacao`
   MODIFY `idAvaliacao` int(11) NOT NULL AUTO_INCREMENT;
 
---
 -- AUTO_INCREMENT de tabela `boletim`
---
 ALTER TABLE `boletim`
   MODIFY `idBoletim` int(11) NOT NULL AUTO_INCREMENT;
 
---
 -- AUTO_INCREMENT de tabela `forum`
---
 ALTER TABLE `forum`
   MODIFY `idForum` int(11) NOT NULL AUTO_INCREMENT;
 
---
--- AUTO_INCREMENT de tabela `usuario`
---
-ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT;
+-- AUTO_INCREMENT de tabela `usuarios`
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 COMMIT;

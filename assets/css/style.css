@@ -151,12 +151,20 @@ h1 {
   font-weight: 600;
 }
 
-.navbar .sair button{
+.sair form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sair form button{
   width: 40%;
   height: 30px;
   background-color: #fff;
   color: #005594;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   border: none;
   border-radius: 15px;
@@ -164,16 +172,21 @@ h1 {
   transition: all 0.3s;
   margin-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 5px;
 }
 
-.navbar .sair button:hover{
+.sair form button:hover{
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   background-color: #f78b1f;
   color: #fff;
 }
 
-.navbar .sair button a{
+.sair form button a{
   color: #005594;
   font-size: 14px;
   font-weight: 400;
@@ -224,7 +237,7 @@ h1 {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin-top: 60px;
+  margin-top: 6%;
 }
 
 .container-footer p {
@@ -233,6 +246,19 @@ h1 {
 
 .container-footer p span {
   color: #f78b1f;
+}
+
+.container-footer p span a{
+  color: #f78b1f;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.container-footer p span a:hover{
+  color: #005594;
+  font-size: 20px;
+  transition: all 0.3s;
 }
 
 .login{
@@ -264,7 +290,6 @@ h1 {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin-top: 5%;
-  margin-bottom: 2%;
   background-color: #f8f8f8;
   z-index: 5;
 }
