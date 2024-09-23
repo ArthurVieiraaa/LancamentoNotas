@@ -33,6 +33,7 @@ document.querySelector("#button-tecnico").addEventListener("click", () => {
 }
 )
 
+
 // Fechar Modal
 
 document.querySelector("#close-limpeza").addEventListener("click", () => {
